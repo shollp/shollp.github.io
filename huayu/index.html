@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>花与蛇4-影片背景、系列脉络与观影参考指南</title>
+<meta name="description" content="围绕花与蛇4整理系列脉络、题材特征、人物关系、观看顺序与常见问题，帮助读者了解这部作品的背景定位与观影参考信息。">
+<meta name="keywords" content="花与蛇4,花与蛇系列,花与蛇4剧情,花与蛇4人物,花与蛇4观看顺序,日本电影系列">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --ink:#1c1a1f;
+    --ink-soft:#4a4550;
+    --paper:#f7f3ee;
+    --paper-2:#ffffff;
+    --line:#e2d9d0;
+    --plum:#7a1f36;
+    --plum-soft:#a8385a;
+    --gold:#b98a3e;
+    --shadow:0 10px 30px rgba(28,26,31,.08);
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"Songti SC","Noto Serif SC","Source Han Serif SC",Georgia,"Microsoft YaHei",serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{
+    width:100%;
+    max-width:1120px;
+    margin:0 auto;
+    padding:0 20px;
+  }
+  /* ---------- 顶部 ---------- */
+  .site-header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(247,243,238,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+    min-height:66px;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+    letter-spacing:.04em;
+  }
+  .brand-mark{
+    width:32px;height:32px;
+    border-radius:50%;
+    background:radial-gradient(circle at 30% 30%,var(--plum-soft),var(--plum));
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-size:15px;font-weight:700;
+    flex:0 0 auto;
+  }
+  .brand-text{font-size:17px;}
+  .brand-text small{
+    display:block;
+    font-size:11px;
+    font-weight:400;
+    color:var(--ink-soft);
+    letter-spacing:.14em;
+  }
+  .main-nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:4px 20px;
+    font-size:14.5px;
+    font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+  }
+  .main-nav a{
+    padding:6px 2px;
+    color:var(--ink-soft);
+    border-bottom:2px solid transparent;
+    transition:.2s;
+  }
+  .main-nav a:hover{
+    color:var(--plum);
+    border-bottom-color:var(--plum);
+  }
+  /* ---------- 首屏 ---------- */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(900px 380px at 12% -10%,rgba(122,31,54,.16),transparent 60%),
+      linear-gradient(160deg,#241d26 0%,#3a2430 55%,#1d1820 100%);
+    color:#f4ece6;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    right:-140px;top:-120px;
+    width:420px;height:420px;
+    border-radius:50%;
+    border:1px solid rgba(185,138,62,.35);
+    box-shadow:0 0 0 60px rgba(185,138,62,.06),0 0 0 120px rgba(185,138,62,.04);
+    pointer-events:none;
+  }
+  .hero-inner{
+    position:relative;
+    z-index:2;
+    padding:64px 0 58px;
+    display:grid;
+    grid-template-columns:1.35fr .95fr;
+    gap:44px;
+    align-items:center;
+  }
+  .hero-tag{
+    display:inline-block;
+    font-family:"Microsoft YaHei",sans-serif;
+    font-size:12.5px;
+    letter-spacing:.18em;
+    color:#e7c79a;
+    border:1px solid rgba(231,199,154,.5);
+    border-radius:999px;
+    padding:4px 14px;
+    margin-bottom:20px;
+  }
+  .hero h1{
+    font-size:clamp(28px,4.2vw,44px);
+    line-height:1.35;
+    margin:0 0 18px;
+    letter-spacing:.02em;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:#e9c185;
+  }
+  .hero p.lead{
+    font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+    font-size:15.5px;
+    color:rgba(244,236,230,.82);
+    margin:0 0 26px;
+    max-width:56ch;
+  }
+  .hero-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+  }
+  .btn{
+    display:inline-block;
+    font-family:"Microsoft YaHei",sans-serif;
+    font-size:14.5px;
+    padding:11px 24px;
+    border-radius:999px;
+    border:1px solid transparent;
+    cursor:pointer;
+    transition:.22s;
+  }
+  .btn-primary{
+    background:linear-gradient(135deg,var(--plum-soft),var(--plum));
+    color:#fff;
+    box-shadow:0 8px 22px rgba(122,31,54,.35);
+  }
+  .btn-primary:hover{transform:translateY(-2px);}
+  .btn-ghost{
+    border-color:rgba(244,236,230,.42);
+    color:#f4ece6;
+  }
+  .btn-ghost:hover{background:rgba(244,236,230,.1);}
+  .hero-panel{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(231,199,154,.24);
+    border-radius:var(--radius);
+    padding:24px 24px 20px;
+    font-family:"Microsoft YaHei",sans-serif;
+  }
+  .hero-panel h2{
+    font-size:15px;
+    letter-spacing:.1em;
+    margin:0 0 14px;
+    color:#e9c185;
+    font-weight:600;
+  }
+  .hero-panel dl{
+    margin:0;
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:9px 16px;
+    font-size:13.5px;
+  }
+  .hero-panel dt{color:rgba(244,236,230,.6);}
+  .hero-panel dd{margin:0;color:#f4ece6;}
+  /* ---------- 通用区块 ---------- */
+  section{padding:58px 0;}
+  .section-head{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:20px;
+    margin-bottom:30px;
+    border-bottom:1px solid var(--line);
+    padding-bottom:16px;
+  }
+  .section-head h2{
+    font-size:clamp(21px,2.6vw,27px);
+    margin:0;
+    letter-spacing:.02em;
+  }
+  .section-head h2 span{
+    display:block;
+    font-family:"Microsoft YaHei",sans-serif;
+    font-size:12.5px;
+    font-weight:400;
+    letter-spacing:.2em;
+    color:var(--gold);
+    margin-bottom:6px;
+  }
+  .section-head p{
+    margin:0;
+    font-family:"Microsoft YaHei",sans-serif;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    max-width:44ch;
+  }
+  /* ---------- 简介 ---------- */
+  .intro-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr;
+    gap:38px;
+    align-items:start;
+  }
+  .intro-text p{
+    margin:0 0 16px;
+    font-size:16px;
+    color:#2c2733;
+  }
+  .intro-text p:last-child{margin-bottom:0;}
+  .fact-card{
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:24px;
+    box-shadow:var(--shadow);
+  }
+  .fact-card h3{
+    margin:0 0 16px;
+    font-size:16px;
+    letter-spacing:.06em;
+    color:var(--plum);
+  }
+  .fact-card ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-family:"Microsoft YaHei",sans-serif;
+    font-size:14px;
+  }
+  .fact-card li{
+    display:flex;
+    gap:12px;
+    padding:9px 0;
+    border-bottom:1px dashed var(--line);
+    color:var(--ink-soft);
+  }
+  .fact-card li:last-child{border-bottom:0;}
+  .fact-card li b{
+    flex:0 0 76px;
+    color:var(--ink);
+    font-weight:600;
+  }
+  /* ---------- 系列脉络时间线 ---------- */
+  .timeline{
+    position:relative;
+    margin:0;
+    padding:6px 0 6px 26px;
+    list-style:none;
+    border-left:2px solid var(--line);
+  }
+  .timeline li{
+    position:relative;
+    padding:0 0 26px 22px;
+  }
+  .timeline li:last-child{padding-bottom:0;}
+  .timeline li::before{
+    content:"";
+    position:absolute;
+    left:-33px;top:8px;
+    width:12px;height:12px;
+    border-radius:50%;
+    background:var(--paper);
+    border:2px solid var(--plum-soft);
+  }
+  .timeline h3{
+    margin:0 0 6px;
+    font-size:16.5px;
+  }
+  .timeline h3 small{
+    font-family:"Microsoft YaHei",sans-serif;
+    font-size:12px;
+    font-weight:400;
+    color:var(--gold);
+    letter-spacing:.08em;
+    margin-left:8px;
+  }
+  .timeline p{
+    margin:0;
+    font-family:"Microsoft YaHei",sans-serif;
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+  /* ---------- 人物卡片 ---------- */
+  .cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:22px;
+  }
+  .card{
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:24px 22px;
+    box-shadow:var(--shadow);
+    transition:.24s;
+  }
+  .card:hover{
+    transform:translateY(-4px);
+    border-color:rgba(122,31,54,.35);
+  }
+  .card .avatar{
+    width:44px;height:44px;
+    border-radius:12px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:18px;
+    color:#fff;
+    background:linear-gradient(135deg,var(--plum-soft),var(--plum));
+    margin-bottom:14px;
+  }
+  .card h3{
+    margin:0 0 8px;
+    font-size:17px;
+  }
+  .card p{
+    margin:0;
+    font-family:"Microsoft YaHei",sans-serif;
+    font-size:13.8px;
+    color:var(--ink-soft);
+  }
+  /* ---------- 主题解读 ---------- */
+  .theme-band{
+    background:linear-gradient(180deg,#fff 0%,#fbf7f3 100%);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .theme-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:24px;
+  }
+  .theme-item{
+    border-left:3px solid var(--gold);
+    padding:4px 0 4px 18px;
+  }
+  .theme-item h3{
+    margin:0 0 8px;
+    font-size:16.5px;
+    color:var(--plum);
+  }
+  .theme-item p{
+    margin:0;
+    font-family:"Microsoft YaHei",sans-serif;
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+  /* ---------- 观看建议 ---------- */
+  .guide-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+  }
+  .guide-box{
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:26px 24px;
+  }
+  .guide-box h3{
+    margin:0 0 14px;
+    font-size:17px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .guide-box h3::before{
+    content:"";
+    width:8px;height:18px;
+    border-radius:3px;
+    background:linear-gradient(180deg,var(--plum-soft),var(--plum));
+  }
+  .guide-box ol,.guide-box ul{
+    margin:0;
+    padding-left:20px;
+    font-family:"Microsoft YaHei",sans-serif;
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+  .guide-box li{margin-bottom:9px;}
+  .guide-box li:last-child{margin-bottom:0;}
+  /* ---------- FAQ ---------- */
+  .faq-list{
+    display:grid;
+    gap:14px;
+  }
+  .faq-item{
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+  }
+  .faq-item summary{
+    cursor:pointer;
+    list-style:none;
+    padding:18px 22px;
+    font-size:16px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    transition:.2s;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{
+    content:"+";
+    font-family:"Microsoft YaHei",sans-serif;
+    font-size:20px;
+    color:var(--plum);
+    line-height:1;
+    flex:0 0 auto;
+  }
+  .faq-item[open] summary::after{content:"–";}
+  .faq-item summary:hover{background:#fbf7f3;}
+  .faq-item .faq-body{
+    padding:0 22px 20px;
+    font-family:"Microsoft YaHei",sans-serif;
+    font-size:14.2px;
+    color:var(--ink-soft);
+    border-top:1px dashed var(--line);
+    padding-top:16px;
+  }
+  /* ---------- 侧栏提示 ---------- */
+  .notice{
+    margin-top:34px;
+    background:#fdf6ec;
+    border:1px solid #ecd9b6;
+    border-radius:var(--radius);
+    padding:20px 24px;
+    font-family:"Microsoft YaHei",sans-serif;
+    font-size:13.6px;
+    color:#6b5330;
+  }
+  .notice strong{color:#8a5a12;}
+  /* ---------- 页脚 ---------- */
+  .site-footer{
+    background:#221c24;
+    color:rgba(244,236,230,.72);
+    padding:48px 0 26px;
+    font-family:"Microsoft YaHei",sans-serif;
+    font-size:13.5px;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:34px;
+    padding-bottom:30px;
+    border-bottom:1px solid rgba(255,255,255,.1);
+  }
+  .footer-grid h4{
+    color:#e9c185;
+    font-size:14px;
+    letter-spacing:.1em;
+    margin:0 0 14px;
+    font-weight:600;
+  }
+  .footer-grid p{margin:0 0 10px;line-height:1.8;}
+  .footer-grid ul{
+    margin:0;padding:0;list-style:none;
+  }
+  .footer-grid li{margin-bottom:9px;}
+  .footer-grid a:hover{color:#e9c185;}
+  .footer-bottom{
+    padding-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 24px;
+    justify-content:space-between;
+    font-size:12.5px;
+    color:rgba(244,236,230,.5);
+  }
+  /* ---------- 响应式 ---------- */
+  @media (max-width:900px){
+    .hero-inner{grid-template-columns:1fr;gap:32px;padding:52px 0 46px;}
+    .intro-grid{grid-template-columns:1fr;gap:28px;}
+    .guide-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr 1fr;gap:26px;}
+  }
+  @media (max-width:640px){
+    .header-inner{flex-direction:column;align-items:flex-start;padding:12px 0;gap:10px;}
+    .main-nav{gap:4px 16px;font-size:13.5px;}
+    section{padding:42px 0;}
+    .section-head{flex-direction:column;align-items:flex-start;gap:10px;}
+    .hero h1{font-size:26px;}
+    .footer-grid{grid-template-columns:1fr;}
+    .fact-card li{flex-direction:column;gap:2px;}
+    .fact-card li b{flex:none;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <span class="brand-mark">花</span>
+      <span class="brand-text">花与蛇4<small>系列观影参考</small></span>
+    </div>
+    <nav class="main-nav" aria-label="站内导航">
+      <a href="#intro">作品简介</a>
+      <a href="#series">系列脉络</a>
+      <a href="#roles">人物与关系</a>
+      <a href="#theme">题材解读</a>
+      <a href="#guide">观看建议</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero" aria-label="首屏介绍">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="hero-tag">日本电影系列 · 观影参考</span>
+        <h1>花与蛇4：<em>系列脉络、题材特征与观看参考</em></h1>
+        <p class="lead">如果你正在搜索“花与蛇4”，多半是想弄清楚它在整个系列里的位置、延续了哪些设定、与前作有什么关联，以及适不适合自己观看。本页把可确认的系列信息、常见疑问和观看顺序整理在一起，方便快速建立整体认知。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#intro">从简介开始了解</a>
+          <a class="btn btn-ghost" href="#faq">查看常见问题</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="速览信息">
+        <h2>速览</h2>
+        <dl>
+          <dt>作品类型</dt><dd>日本剧情电影系列</dd>
+          <dt>关键词</dt><dd>花与蛇4</dd>
+          <dt>系列定位</dt><dd>系列续作之一</dd>
+          <dt>内容属性</dt><dd>成人向题材，需谨慎选择</dd>
+          <dt>适合读者</dt><dd>想了解系列背景与观看顺序的人</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 作品简介 -->
+  <section id="intro">
+    <div class="wrap">
+      <div class="section-head">
+        <h2><span>OVERVIEW</span>花与蛇4 是什么</h2>
+        <p>先厘清它属于哪一类作品，再决定要不要往下看。</p>
+      </div>
+      <div class="intro-grid">
+        <div class="intro-text">
+          <p>“花与蛇”是源自日本的一个电影系列名称，围绕特定题材展开，不同时期由不同团队制作，因此各部的导演、演员阵容和影像风格并不完全一致。“花与蛇4”通常被用来指代该系列中排序靠后的一部续作，属于系列延续性的作品之一。</p>
+          <p>由于该系列各部之间存在改编来源、制片方与发行版本的差异，网络上对“第几部”的编号有时并不统一。有的资料按上映顺序排列，有的按发行版本排列，因此看到不同编号时不必急于下结论，更稳妥的做法是核对影片的原始片名、上映年份与主要演职人员信息。</p>
+          <p>从题材上看，这一系列长期属于成人向剧情片范畴，涉及较为强烈的成人内容与心理张力。它并不适合当作轻松娱乐片观看，也不适合未成年观众。了解它的价值更多在于认识日本类型电影的一个分支，以及这一题材在不同年代的表达方式变化。</p>
+          <p>本页不提供影片资源、播放地址或下载渠道，只做背景梳理与观看参考。如果你关注的是剧情结构、系列关联或选择建议，下面的内容会更有帮助。</p>
+        </div>
+        <aside class="fact-card">
+          <h3>信息核对要点</h3>
+          <ul>
+            <li><b>原始片名</b>以日文原名为准，避免译名混淆</li>
+            <li><b>上映年份</b>确认影片的实际发行时间</li>
+            <li><b>制作团队</b>导演与制片方常因部数不同而变化</li>
+            <li><b>版本差异</b>不同地区发行的剪辑版本可能不同</li>
+            <li><b>内容分级</b>属成人向，观看前请确认自身情况</li>
+            <li><b>资料出处</b>优先参考正式影视资料库与官方信息</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 系列脉络 -->
+  <section id="series" class="theme-band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2><span>SERIES</span>系列脉络与位置</h2>
+        <p>理解“4”从哪来，比记住数字本身更重要。</p>
+      </div>
+      <ol class="timeline">
+        <li>
+          <h3>系列源起<small>早期阶段</small></h3>
+          <p>“花与蛇”最初以文学作品形式出现，后被改编为影视作品，形成系列化的基础。早期版本与后来的重制版本在叙事重心和影像表达上有明显差异。</p>
+        </li>
+        <li>
+          <h3>系列扩展<small>多版本并行</small></h3>
+          <p>随着不同制作方介入，系列出现多个分支与重制版本，片名相近但内容与团队不同，这也是编号容易混淆的主要原因。</p>
+        </li>
+        <li>
+          <h3>花与蛇4 的位置<small>续作序列</small></h3>
+          <p>“花与蛇4”一般被归入系列续作序列，延续该题材的核心设定与人物关系框架，同时在演员与制作层面呈现新的组合。具体归属建议以正式资料库的条目为准。</p>
+        </li>
+        <li>
+          <h3>观看顺序建议<small>参考思路</small></h3>
+          <p>若以理解系列演变为目的，可按上映年份顺序观看；若只对某一版本感兴趣，可先确认该部的制作团队与主演，再决定是否补看前作。</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 人物与关系 -->
+  <section id="roles">
+    <div class="wrap">
+      <div class="section-head">
+        <h2><span>CHARACTERS</span>人物与关系结构</h2>
+        <p>该题材常见的人物类型与冲突方式。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="avatar">主</div>
+          <h3>核心女性角色</h3>
+          <p>系列通常围绕一位处于权力与情感夹缝中的女性角色展开，她的处境与选择构成叙事主轴，也是题材张力的主要来源。</p>
+        </article>
+        <article class="card">
+          <div class="avatar">权</div>
+          <h3>掌控方角色</h3>
+          <p>与之相对的是掌握资源或话语权的一方，双方关系并非简单的对立，而带有复杂的心理博弈成分。</p>
+        </article>
+        <article class="card">
+          <div class="avatar">旁</div>
+          <h3>旁观与介入者</h3>
+          <p>第三类角色往往承担推动情节或揭示信息的功能，他们的介入让原本封闭的关系结构产生变化。</p>
+        </article>
+        <article class="card">
+          <div class="avatar">境</div>
+          <h3>环境与空间</h3>
+          <p>封闭或半封闭的空间设定是该题材的常见手法，环境本身也参与塑造人物处境与情绪氛围。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 题材解读 -->
+  <section id="theme" class="theme-band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2><span>THEME</span>题材特征解读</h2>
+        <p>从类型片角度理解它为何被反复讨论。</p>
+      </div>
+      <div class="theme-grid">
+        <div class="theme-item">
+          <h3>权力与依附</h3>
+          <p>该题材常以不对等关系为切入点，讨论控制、服从与自我意识之间的拉扯，这也是它区别于普通剧情片的地方。</p>
+        </div>
+        <div class="theme-item">
+          <h3>视觉与氛围</h3>
+          <p>影像上多强调色彩、构图与空间压迫感，用视觉语言替代大量对白，形成较为独特的观影体验。</p>
+        </div>
+        <div class="theme-item">
+          <h3>改编与再创作</h3>
+          <p>同一原作被多次改编，每次改编都会带入当时的审美与制作条件，因此比较不同版本本身也是一种观察角度。</p>
+        </div>
+        <div class="theme-item">
+          <h3>争议与边界</h3>
+          <p>因题材敏感，该系列长期伴随争议。了解争议来源，有助于更理性地判断它是否适合自己。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 观看建议 -->
+  <section id="guide">
+    <div class="wrap">
+      <div class="section-head">
+        <h2><span>GUIDE</span>观看与选择建议</h2>
+        <p>把注意力放在判断依据上，而不是资源获取。</p>
+      </div>
+      <div class="guide-grid">
+        <div class="guide-box">
+          <h3>先确认这几件事</h3>
+          <ol>
+            <li>确认影片的原始片名与上映年份，避免把不同版本混为一谈。</li>
+            <li>查看正式资料库中的演职人员信息，核对是否为你关注的那一部。</li>
+            <li>确认内容分级与自身接受程度，该系列属成人向题材。</li>
+            <li>选择正规、合法的观看渠道，注意版权与地区发行差异。</li>
+            <li>如仅为了解系列背景，阅读资料与影评同样能达到目的。</li>
+          </ol>
+        </div>
+        <div class="guide-box">
+          <h3>容易踩的坑</h3>
+          <ul>
+            <li>把译名相近的不同作品当成同一部。</li>
+            <li>仅凭编号判断顺序，忽略版本与重制关系。</li>
+            <li>轻信来源不明的剧情简介，导致理解偏差。</li>
+            <li>在未确认分级的情况下直接观看。</li>
+            <li>将虚构情节与现实关系直接对应。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="notice">
+        <strong>提示：</strong>本页面仅提供作品背景与观影参考信息，不提供、不引导任何影片资源获取方式。该系列属成人向题材，请根据自身情况理性选择，并遵守所在地法律法规与平台规则。
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="theme-band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2><span>FAQ</span>常见问题</h2>
+        <p>搜索“花与蛇4”时最常出现的几个疑问。</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>花与蛇4 是整个系列的第几部？</summary>
+          <div class="faq-body">由于该系列存在多个改编版本与重制版本，不同资料对编号的排列方式并不完全一致。比较稳妥的做法是核对影片的原始片名、上映年份和主要演职人员，而不是只看数字。</div>
+        </details>
+        <details class="faq-item">
+          <summary>没看过前作，能直接看这一部吗？</summary>
+          <div class="faq-body">该系列各部之间多为相对独立的叙事框架，直接观看通常不会造成严重的理解障碍。但如果想理解题材的演变和不同版本的差异，按上映顺序补看会更完整。</div>
+        </details>
+        <details class="faq-item">
+          <summary>这部作品适合哪些观众？</summary>
+          <div class="faq-body">它属于成人向剧情题材，涉及较强的心理与成人内容，不适合未成年观众，也不适合以轻松娱乐为目的的观看需求。观看前请确认自身接受程度。</div>
+        </details>
+        <details class="faq-item">
+          <summary>在哪里可以看到？</summary>
+          <div class="faq-body">该系列在不同地区的发行情况差异较大，是否上线正规平台需以当地实际可用的合法渠道为准。本页面不提供资源地址，建议通过正规影视平台或资料库查询发行信息。</div>
+        </details>
+        <details class="faq-item">
+          <summary>为什么网上的剧情介绍差别很大？</summary>
+          <div class="faq-body">部分原因是译名混用与版本差异，也有部分来自二手转述的误差。建议优先参考正式影视资料库的条目信息，再结合影评交叉判断。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>关于本页</h4>
+        <p>本页面围绕“花与蛇4”整理系列背景、题材特征与观影参考信息，内容以公开可查的影视资料为基础，仅用于信息了解与阅读参考。</p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <ul>
+          <li><a href="#intro">作品简介</a></li>
+          <li><a href="#series">系列脉络</a></li>
+          <li><a href="#roles">人物与关系</a></li>
+          <li><a href="#theme">题材解读</a></li>
+          <li><a href="#guide">观看建议</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>阅读提醒</h4>
+        <p>该系列属成人向题材，请根据自身情况理性选择。</p>
+        <p>请通过合法渠道获取影视内容，遵守当地法律法规与平台规则。</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>花与蛇4 · 系列观影参考</span>
+      <span>内容仅供信息参考，不构成任何观看建议</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+        </html>
